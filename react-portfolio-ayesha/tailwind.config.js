@@ -7,6 +7,7 @@ module.exports = {
       large: "50px",
       md: "0.375rem",
       lg: "0.5rem",
+      default: "25px",
     },
     extend: {
       colors: {
@@ -32,6 +33,11 @@ module.exports = {
         RockSalt: ["Rock Salt", "cursive"],
         SedgwickAve: ["Sedgwick Ave", "cursive"],
         SedgwickAveDisplay: ["Sedgwick Ave Display", "cursive"],
+        Caveat: ["Caveat", "cursive"],
+        KaushanScript: ["Kaushan Script", "cursive"],
+        SyncTactile: ["Syne Tactile", "cursive"],
+        Aladin: ["Aladin", "cursive"],
+        JAH: ["Just Another Hand", "cursive"],
       },
       content: {
         brush: "url('./assets/home-section/spacehacker.png')",

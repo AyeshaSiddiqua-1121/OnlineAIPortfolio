@@ -11,15 +11,18 @@ function App() {
   useEffect(() => {
     const handleScroll=()=>{
       if(window.scrollY===0) {setIsTopOfPage(true)
-      setSelectedPage("home")}
-      if(window.screenY!==0) setIsTopOfPage(false)
+      }
+      else{
+      setIsTopOfPage(false)
+      }
+      
     }
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
     return ()=>window.removeEventListener('scroll',handleScroll)
   }, []);
   return (
     <>
-      <div className="app bg-dark-purple flex flex-col">
+      <div className="app flex flex-col">
         <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
